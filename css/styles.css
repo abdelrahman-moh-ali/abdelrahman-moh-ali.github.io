@@ -1,0 +1,308 @@
+/* index.php css */
+
+body
+{
+    margin: 0;
+    font-family: Arial;
+    background-color: #111111;
+    color: white;
+}
+
+header
+{
+    background-color: black;
+    padding: 15px;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-bar-elements
+{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    
+}
+
+.nav-bar-element {
+    text-shadow: 0px 0px 30px gray;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+main
+{
+    padding: 20px;
+}
+
+#index-page {
+    background-image: url(../assets/images/indexbackground.png);
+    background-size: cover;
+    background-position: 100%;
+}
+
+#index-page h2{
+    color: black;
+    text-shadow: 0px 0px 30px whitesmoke;
+}
+
+section
+{
+    margin-bottom: 40px;
+    padding: 1px 20px 10px 20px;
+    background-color: #00000081;
+    border-radius: 8px;
+}
+
+#featured-albums {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.featured-album {
+    padding: 20px 15px 0px 15px;
+    border-radius: 10px;
+    background-color: #1b1b1b;
+}
+
+.featured-album img {
+    height: 200px;
+    border: 2px solid black;
+}
+
+#featured-video {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#featured-video-info {
+    width: 40vw;
+}
+
+/* #featured-videos {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+} */
+
+footer
+{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+/* discography.php css */
+
+#discography-page {
+    background-image: url("../assets/images/discographybackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+#album-search
+{
+    width: 400px;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    border: 3px solid darkslategray;
+    border-radius: 10px;
+}
+
+#album-catalog
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.album-card
+{
+    display: flex;
+    align-items: center;
+    background-color: #1b1b1b;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.album-card img
+{
+    width: 180px;
+}
+
+.album-info
+{
+    flex: 1;
+}
+
+/* band.php css */
+
+#band-page {
+    background-image: url("../assets/images/bandbackground.png");
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: bottom;
+    background-position: right;
+}
+
+#members-container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.member-card
+{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #1b1b1b;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.member-card img
+{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.member-info
+{
+    flex: 1;
+}
+
+/* auth.php css */
+
+#auth-page {
+    background-image: url("../assets/images/authbackground.avif");
+    background-repeat: no-repeat;
+    background-size: 160%;
+    background-position: 30%;
+}
+
+#auth-container
+{
+    width: 400px;
+    height: 350px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    box-shadow: 0px 0px 50px black;
+    background-color: #000000d7;
+    border-radius: 8px;
+}
+
+#auth-buttons
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+
+}
+
+#auth-buttons button {
+    width: 120px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#login-form-element, #register-form-element
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#auth-container input
+{
+    padding: 10px;
+    width: 350px;
+}
+
+#auth-container button
+{
+    padding: 10px;
+}
+
+/* order.php css */
+
+#order-page {
+    background-image: url("../assets/images/ordersbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: rgb(255, 255, 255);
+    
+}
+
+#order-page table
+{
+    width: 100%;
+    border-collapse:separate;
+    margin-bottom: 40px;
+}
+
+#order-page th, td
+{
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgb(66, 85, 31);
+}
+
+#order-page th
+{
+    background-color: #1b1b1b;
+}
+
+/* dashboard.php */
+#dashboard-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 404.php css */
+
+#error-page {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url(../assets/images/errorbackground.png);
+    background-size: 100%;
+}
+
+#error-page h1 {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+#error-page a {
+    display: inline-block;
+    margin-top: 20px;
+    color: rgb(253, 68, 68);
+}
